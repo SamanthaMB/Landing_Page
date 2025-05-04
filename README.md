@@ -66,8 +66,7 @@ La web tiene como objetivo simular un sitio profesional que sirva como carta de 
 
 **Samantha Mohedano Barrena**  
 Estudiante del CFGS Desarrollo de Aplicaciones Multiplataforma (UNIR)
-
-- 📧 Email: samantha@gmail.com  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/samantha-mohedano-barrena-991853169/)  
+ 
+- 🔗 LinkedIn: [LinkedIn](https://www.linkedin.com/in/samantha-mohedano-barrena-991853169/)  
 - 🌍 GitHub: [github.com/SamanthaMB](https://github.com/SamanthaMB)
 
