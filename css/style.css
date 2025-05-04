@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Sansation:wght@700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  --fuente-primera: "Inter", sans-serif;
+  --fuente-segunda: "Sansation", sans-serif;
+  --color-uno: #ed891d;
+  --color-dos: #faf8e1;
+  --color-tres: #83948c;
+  --color-cuatro: #c5643b;
+}
+
+/*WEB PRINCIPAL*/
+
+/*Body*/
+.principal {
+  font-family: var(--fuente-primera);
+  background-color: var(--color-dos);
+}
+
+section {
+  position: relative;
+  /* como la principal es absoluta, esta la hacemos relativa para poder manejarla*/
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /*flexible*/
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+/* Cabecera de la web*/
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  /*espacio entre ellos*/
+  align-items: center;
+}
+
+header .nombre {
+  color: var(--color-dos);
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  /*letra en mayúscula*/
+  background: var(--color-uno);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 20px;
+  font-family: var(--fuente-segunda);
+  font-weight: 600;
+
+}
+
+header .nombre:hover {
+  color: var(--color-dos);
+  background: var(--color-tres);
+  transition: 0.5s;
+}
+
+/* Oculta el checkbox */
+header .menu-toggle {
+  display: none;
+}
+
+/* Estilo del icono de menú */
+header .menu-icon {
+  display: none;
+  font-size: 2em;
+  color: var(--color-uno);
+  cursor: pointer;
+}
+
+header .navbar {
+  position: relative;
+  display: flex;
+}
+
+header .navbar li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navbar li a {
+  text-decoration: none;
+  color: var(--color-uno);
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+header .navbar li a:hover {
+  border-bottom: 5px solid var(--color-tres);
+  padding: 2px;
+}
+
+/*Contenido de la web*/
+
+.contenido {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contenido .tituloBox {
+  position: relative;
+  max-width: 700px;
+  text-align: center;
+}
+
+.contenido .tituloBox h2 {
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: var(--color-uno);
+  margin-bottom: 10px;
+}
+
+.contenido .tituloBox h2 span {
+  background: var(--color-uno);
+  color: var(--color-dos);
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: var(--fuente-segunda);
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.contenido .tituloBox p {
+  font-size: 1.8em;
+  line-height: 1.5;
+  color: var(--color-uno);
+  font-family: var(--fuente-segunda);
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.contenido .tituloBox a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-dos);
+  background-color: var(--color-uno);
+  padding: 10px 20px;
+  margin-left: 30px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-style: italic;
+}
+
+.contenido .tituloBox a:hover {
+  color: var(--color-dos);
+  background-color: var(--color-tres);
+  transition: 0.3s;
+}
+
+.contenido .imagenBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  margin-top: -90px;
+  z-index: -5;
+}
+
+.contenido .imagenBox img {
+  height: 90vh;
+  width: 50vh;
+}
+
+.contenido .imagenBox img:hover {
+  height: 90vh;
+}
+
+/*Copyright*/
+.copyright {
+  position: absolute;
+  bottom: 0px;
+  left: 500px;
+  margin-bottom: 20px;
+  padding: 0 100px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  color: var(--color-uno);
+  text-align: center;
+  font-style: italic;
+  margin-left: 80px;
+}
+
+/*Redes Sociales*/
+.redesSociales {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px 30px;
+  list-style: none;
+}
+
+.redesSociales li {
+  padding: 10px;
+}
+
+.redesSociales li a {
+  color: var(--color-uno);
+  font-size: 2.0em;
+  transition: 0.3s;
+}
+
+.redesSociales li:hover a {
+  color: var(--color-tres);
+}
+
+
+/* PROYECTOS */
+
+
+
+.proyectos {
+  font-family: var(--fuente-segunda);
+  background-color: var(--color-dos);
+  display: flex;
+  /*Propiedades para ajustar y alinear las flip card*/
+  flex-wrap: wrap;
+  /* flex box*/
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* Determina si la cara posterior será visible o no*/
+  border-radius: 10px;
+  overflow: hidden;
+  /* evita el desbordamiento, oculta el contenido que se desborda*/
+  transition: 0.5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  /* Que rote sobre el eje Y un ángulo de 0 grados*/
+  box-shadow: 0px 5px 10px var(--color-tres);
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*Indica que el contenido del elemento deberá ser redimensionado para ajustarse al contenedor*/
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  /*línea de cabecera, espacio entre líneas*/
+  color: var(--color-dos);
+  background-color: var(--color-uno);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  /* Que rote sobre el eje Y un ángulo de 180 grados*/
+  background-color: var(--color-uno);
+  padding: 15px;
+  color: var(--color-dos);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 5px 10px var(--color-tres);
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  /*Espacio entre las letras*/
+}
+
+.card .back p {
+  letter-spacing: 1px;
+  /*Espacio entre las letras*/
+}
+
+.card .back .link {
+  border-top: 2px solid;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  text-decoration: none;
+  color: var(--color-dos);
+}
+
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+/* CONTACTO */
+
+.contacto {
+  position: relative;
+  font-family: var(--fuente-primera);
+  background-color: var(--color-dos);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.contenedor {
+  margin-top: 120px;
+  background-color: var(--color-dos);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--color-uno);
+}
+
+.contenedor h2 {
+  margin-bottom: 20px;
+  color: var(--color-uno);
+  font-family: var(--fuente-primera);
+}
+
+.contenedor label {
+  display: block;
+  margin-top: 15px;
+  color: black;
+  font-family: var(--fuente-segunda);
+}
+
+.contenedor input,
+.contenedor textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--color-tres);
+  border-radius: 4px;
+}
+
+.contenedor button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--color-uno);
+  color: var(--color-dos);
+  font-family: var(--fuente-segunda);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.contenedor button:hover {
+  background-color: var(--color-tres);
+}
+
+
+.circulo-izquierda {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 450px;
+  height: 450px;
+  background-color: var(--color-uno);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circulo-derecha {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 450px;
+  height: 450px;
+  background-color: var(--color-uno);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+
+/* QUIÉN SOY */
+
+.mipersona {
+  font-family: var(--fuente-primera);
+  background-color: var(--color-dos);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.quiensoy {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+
+.foto img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin: 30px 0;
+  box-shadow: 0 0 10px var(--color-uno);
+}
+
+.texto h3 {
+  color: var(--color-tres);
+  font-family: var(--fuente-segunda);
+  text-shadow: 0px 0px 20px var(--color-cuatro);
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.texto p {
+  color: var(--color-cuatro);
+  font-size: 1em;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-shadow: 0px 0px 20px var(--color-uno);
+}
+
+
+/* CV */
+
+.cv {
+  background-color: var(--color-dos);
+  color: #171431;
+  font-family: var(--fuente-primera);
+  margin: 10%;
+}
+
+
+.cv2 {
+  background-color: var(--color-dos);
+  box-shadow: 0 0 20px var(--color-uno);
+  width: 55%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cv-cabecera {
+  margin-bottom: -30px;
+}
+
+
+.foto-perfil {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* Oculta cualquier parte de la imagen que se salga del contenedor */
+  display: inline-block;
+  vertical-align: middle;
+  border: 7px solid var(--color-uno);
+  margin: 5%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.foto-perfil img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trabajo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  text-shadow: 0px 0px 20px var(--color-uno);
+}
+
+
+.cv3 {
+  display: flex;
+  width: 100%;
+}
+
+.perfil {
+  display: inline-block;
+  vertical-align: top;
+  background-color: var(--color-dos);
+
+  padding: 5%;
+  width: 40%;
+}
+
+.perfil h3 {
+  margin-top: 40px;
+  border-bottom: 2px solid var(--color-uno);
+  text-align: left;
+  text-shadow: 0px 0px 20px var(--color-uno);
+}
+
+.perfil ul {
+  margin-left: 5%;
+  margin-top: 5%;
+  line-height: 24px;
+}
+
+.perfil ul li a {
+  color: var(--color-cuatro);
+  text-decoration: none;
+}
+
+
+.perfil p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  font-size: -1em;
+  line-height: 24px;
+}
+
+.icono {
+  margin-right: 10px;
+  color: var(--color-cuatro)
+}
+
+.experiencia {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5%;
+  width: 60%;
+}
+
+.experiencia h3 {
+  text-align: right;
+  margin-top: 30px;
+  border-bottom: 2px solid var(--color-uno);
+  text-shadow: 0px 0px 20px var(--color-uno);
+}
+
+.experiencia h4 {
+  margin-top: 20px;
+  color: var(--color-cuatro);
+}
+
+.informacion {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-top: 5px;
+  line-height: 24px;
+  color: var(--color-tres);
+}
+
+.duracion {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 49%;
+  margin-top: 5px;
+  line-height: 24px;
+  color: var(--color-tres);
+}
+
+.descripcion {
+  margin-top: 3%;
+  text-align: justify;
+  font-size: -2em;
+  line-height: 24px;
+}
+
+/*RESPONSIVE  (intento)*/
+
+/* Dispositivos: 576px */
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  /* El menú se oculta por defecto y aparece solo al activar el checkbox */
+  header .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--color-dos);
+  }
+
+  /* Mostrar el menú cuando el checkbox se activa */
+  .menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
+  }
+
+  /* Los enlaces del menú se ajustan en fila vertical */
+  header .navbar li {
+    margin: 10px 0;
+  }
+
+  /* Ajustes del icono del menú */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  header .navbar li a {
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .copyright {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .cv2 {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .cv3 {
+    flex-direction: column;
+  }
+
+  .perfil, .experiencia {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .foto-perfil {
+    width: 180px;
+    height: 180px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .trabajo {
+    text-align: center;
+    display: block;
+    margin-left: 0;
+  }
+
+  .formulario {
+    padding: 10px;
+  }
+
+  .contenedor {
+    padding: 20px;
+  }
+
+  .contenido .imagenBox {
+    display: none;
+  }
+
+  .contenido .tituloBox h2 {
+    font-size: 2.5em;
+  }
+}
+
+/* Dispositivos : 992px */
+@media screen and (max-width: 992px) {
+
+   
+   header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  
+  header .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-dos);
+  }
+
+  .menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
+  }
+
+  
+  header .navbar li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  
+  header .navbar li a {
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .copyright {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .cv2 {
+    width: 80%;
+  }
+
+  .cv3 {
+    flex-direction: column;
+  }
+
+  .perfil, .experiencia {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .trabajo {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .contenido {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contenido .imagenBox {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .contenido .tituloBox h2 {
+    font-size: 3em;
+  }
+
+  .contenido .tituloBox p {
+    font-size: 1.2em;
+  }
+}
