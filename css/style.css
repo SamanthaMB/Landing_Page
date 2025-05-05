@@ -715,10 +715,11 @@ header .navbar li a:hover {
 
   }
 
-   header .menu-icon {
+    header .menu-icon {
     display: block;
     position: absolute;
-    margin:auto;
+    top:100px;
+    right: 50px;
     color:var(--color-uno)
   }
 
