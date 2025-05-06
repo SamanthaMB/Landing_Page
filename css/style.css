@@ -640,6 +640,11 @@ header .navbar li a:hover {
     color:var(--color-uno)
   }
 
+   /* Mostrar el menú cuando el checkbox se activa */
+   .menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
+  }
+
   /* Los enlaces del menú se ajustan en fila vertical */
   header .navbar li {
     margin: 10px 0;
@@ -716,12 +721,17 @@ header .navbar li a:hover {
 
   }
 
-   /* Ajustes del icono del menú */
-   header .menu-icon {
+  
+  header .menu-icon {
     display: block;
     position: absolute;
-    margin:auto;
+    top:100px;
+    right: 50px;
     color:var(--color-uno)
+  }
+
+  .menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
   }
 
   
